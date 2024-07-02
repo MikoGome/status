@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use((req, res) => {
-  res.header("Access-Control-Allow-Origin": "*");
+  res.headers("Access-Control-Allow-Origin": "*");
 });
 
 app.get('/:status', (req, res) => {
